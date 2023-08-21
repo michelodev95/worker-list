@@ -4,6 +4,10 @@ This worker list application allows you to manage and view information about wor
 
 by: Miguel Ángel Díaz Merino
 
+[Link to test the app](https://workerlist.vercel.app/)
+
+https://workerlist.vercel.app/
+
 ## Key Features
 
 1. **Sort Workers:** You can sort workers in the list by name, last name, and country to quickly find the information you need.
@@ -14,7 +18,7 @@ by: Miguel Ángel Díaz Merino
 
 4. **Reset Users:** You can recover deleted users.
 
-5. **Style Customization:** The application offers style customization options. You can change the appearance of user table rows.
+5. **Style Customization:** The application offers style customization option. You can change the appearance of user table rows.
 
 6. **Clean architecture:** The code is strictly structured, organized and clean.
 
@@ -39,6 +43,7 @@ by: Miguel Ángel Díaz Merino
 - **Typescript**
 
 - **Tailwind CSS**
+- **React Icons**
 
 ## Installation and Execution
 

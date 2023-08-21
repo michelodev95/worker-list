@@ -64,12 +64,12 @@ export function UsersList({
               return (
                 <tr
                   key={`${user.login.uuid}-${user.id}`}
-                  className={`${color} bg-white dark:bg-gray-800 dark:hover:bg-gray-600`}
+                  className={`${color} `}
                 >
                   <th
                     scope="row"
                     onClick={() => handleModalUserInfo(user.email)}
-                    className="flex cursor-pointer items-center px-6 py-4 font-medium whitespace-nowrap dark:text-white"
+                    className="flex cursor-pointer items-center px-6 py-4 font-medium whitespace-nowrap"
                   >
                     <img
                       className="w-10 h-10 rounded-full"

@@ -135,7 +135,7 @@ function App() {
                 <p className="text-xs font-bold text-subtext">
                   Click:{" "}
                   <span className="font-normal">
-                    {"Name - Surname or Country to order"}
+                    {"Name - Surname or Country to sort"}
                   </span>
                 </p>
               </div>

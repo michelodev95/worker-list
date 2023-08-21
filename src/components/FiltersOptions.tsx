@@ -34,7 +34,7 @@ const FiltersOptions = ({
             sorting === SortBy.COUNTRY ? "border-blue-900" : ""
           }`}
         >
-          {sorting === SortBy.COUNTRY ? "No country order" : "Country order"}
+          {sorting === SortBy.COUNTRY ? "No country sort" : "Country sort"}
         </button>
         <button
           onClick={handleReset}

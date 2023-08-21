@@ -24,7 +24,7 @@ https://workerlist.vercel.app/
 
 ## Using the Application
 
-1. **Sort Workers:** Click on the column headers "Name," "Last Name," or "Country" to sort workers in ascending or descending order.
+1. **Sort Workers:** Click on the column headers "Name," "Last Name," or "Country" to sort workers in ascending or descending sort.
 
 2. **Delete Users:** Click the delete button next to a user to remove them. You can recover or permanently delete users from the deleted users view.
 

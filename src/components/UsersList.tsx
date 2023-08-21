@@ -17,7 +17,7 @@ export function UsersList({
   inputValue,
 }: Props) {
   return (
-    <div className="relative overflow-x-auto h-[450px] lg:h-[500px] 2xl:h-[650px]">
+    <div className="relative overflow-x-auto h-[400px] lg:h-[500px] 2xl:h-[650px]">
       {users?.length > 0 ? (
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-gray-700 text-sm font-bold uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">

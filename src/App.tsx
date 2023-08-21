@@ -98,7 +98,7 @@ function App() {
       <div className="relative">
         <div className="w-full pb-20">
           <div className="flex justify-center items-center gap-x-5">
-            <h1 className="text-gray-900 uppercase text-center py-10 font-bold text-4xl">
+            <h1 className="text-gray-900 uppercase text-center py-10 font-bold text-2xl lg:text-4xl">
               Worker List App
             </h1>
             <p className="flex items-center gap-x-1 text-subtext">

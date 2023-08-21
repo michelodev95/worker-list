@@ -1,4 +1,3 @@
-// sortingUtils.tsx
 import { useMemo } from "react";
 import { SortBy, Users } from "../types.d";
 

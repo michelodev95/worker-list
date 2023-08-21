@@ -11,6 +11,7 @@ import ModalDeleteUser from "./components/modals/ModalDeleteUser";
 import { useFilteredUsers } from "./utils/useFilteredUsers";
 import { useSortedUsers } from "./utils/useSortedUsers";
 import { FaUser } from "react-icons/fa";
+import ModalUserInfo from "./components/modals/ModalUserInfo";
 
 function App() {
   const [showColors, setShowColors] = useState(false);
@@ -19,7 +20,8 @@ function App() {
   const [optionsOpen, setOptionsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [deleteModalOpen, setDeleteModalOpen] = useState(false);
-  const [emailToDelete, setEmailToDelete] = useState("");
+  const [emailSelected, setEmailSelected] = useState("");
+  const [openModalUserInfo, setOpenModalUserInfo] = useState(false);
 
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
@@ -74,11 +76,16 @@ function App() {
 
   const handleOpenDeleteModal = (email: string) => {
     setDeleteModalOpen(true);
-    setEmailToDelete(email);
+    setEmailSelected(email);
   };
 
   const handleDelete = (email: string) => {
     dispatch(deleteUser(email));
+  };
+
+  const handleOpenUserModal = (email: string) => {
+    setOpenModalUserInfo(true);
+    setEmailSelected(email);
   };
 
   const handleReset = () => {
@@ -138,6 +145,7 @@ function App() {
                 showColor={showColors}
                 handleOpenDeleteModal={handleOpenDeleteModal}
                 inputValue={filterCountry}
+                handleModalUserInfo={handleOpenUserModal}
               />
             </div>
           </main>
@@ -147,8 +155,13 @@ function App() {
       <ModalDeleteUser
         deleteModalOpen={deleteModalOpen}
         setDeleteModalOpen={setDeleteModalOpen}
-        emailToDelete={emailToDelete}
+        emailToDelete={emailSelected}
         handleDelete={handleDelete}
+      />
+      <ModalUserInfo
+        email={emailSelected}
+        openModalUserInfo={openModalUserInfo}
+        setOpenModalUserInfo={setOpenModalUserInfo}
       />
     </>
   );

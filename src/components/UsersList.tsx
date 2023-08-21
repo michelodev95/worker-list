@@ -7,6 +7,7 @@ interface Props {
   showColor: boolean;
   handleOpenDeleteModal: (email: string) => void;
   inputValue: string | null;
+  handleModalUserInfo: (email: string) => void;
 }
 
 export function UsersList({
@@ -15,6 +16,7 @@ export function UsersList({
   handleOpenDeleteModal,
   changeSorting,
   inputValue,
+  handleModalUserInfo,
 }: Props) {
   return (
     <div className="relative overflow-x-auto h-[400px] lg:h-[500px] 2xl:h-[650px]">
@@ -66,7 +68,8 @@ export function UsersList({
                 >
                   <th
                     scope="row"
-                    className="flex items-center px-6 py-4 font-medium whitespace-nowrap dark:text-white"
+                    onClick={() => handleModalUserInfo(user.email)}
+                    className="flex cursor-pointer items-center px-6 py-4 font-medium whitespace-nowrap dark:text-white"
                   >
                     <img
                       className="w-10 h-10 rounded-full"

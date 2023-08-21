@@ -3,7 +3,7 @@ import SearchIcon from "../../ui/SearchIcon";
 import ArrowDown from "../../ui/ArrowDown";
 
 interface HeaderProps {
-  dropdownRef: any;
+  dropdownRef: React.MutableRefObject<HTMLDivElement | null>;
   setOptionsOpen: (isOpen: boolean) => void;
   setFilterCountry: (value: string | null) => void;
   optionsOpen: boolean;
